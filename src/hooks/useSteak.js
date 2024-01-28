@@ -42,6 +42,7 @@ function useSteak() {
 			})
 			.then((step8) => {
 				addItem(step8);
+				addItem('Steak is ready!')
 			})
 			.catch((e) => console.log(e));
 	}

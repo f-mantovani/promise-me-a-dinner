@@ -23,7 +23,8 @@ function useBrusselSprouts(){
     
 		Promise.all([...brusselsSteps])
 			.then((steps) => {
-				setBrusselSprouts(steps);
+				const addReady = [...steps, 'Brussel sprouts are ready!']
+				setBrusselSprouts(addReady);
 			})
 			.catch((e) => console.log(e));
 	}

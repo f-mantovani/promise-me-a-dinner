@@ -33,8 +33,7 @@ function useBroccoli() {
 			const step7 = await obtainInstruction(food, 6);
 			addItem(step7);
 
-			const step8 = await obtainInstruction(food, 7);
-			addItem(step8);
+			addItem('Broccoli is ready!')
 		} catch (error) {
 			console.log(error);
 		}
