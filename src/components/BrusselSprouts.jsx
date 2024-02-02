@@ -7,7 +7,7 @@ const BrusselSprouts = (props) => {
 		<div className='food'>
 			{brusselSprouts.length > 0 && (
 				<>
-					<img src='/images/brussels-sprouts.jpg' />
+					{brusselSprouts.length === 9 && <img src='/images/brussels-sprouts.jpg' />}
 					<ol>
 						{brusselSprouts.map((e) => (
 							<li key={e}>{e}</li>

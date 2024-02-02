@@ -7,7 +7,7 @@ const MashedPotatoes = (props) => {
 		<div className='food'>
 			{mashedPotatoes.length > 0 && (
 				<>
-					<img src='/images/mashed-potatoes.jpg' />
+					{mashedPotatoes.length === 6 && <img src='/images/mashed-potatoes.jpg' />}
 					<ol>
 						{mashedPotatoes.map((e) => (
 							<li key={e}>{e}</li>

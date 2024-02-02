@@ -7,7 +7,7 @@ const Steak = (props) => {
 		<div className='food'>
 			{steak.length > 0 && (
 				<>
-					<img src='/images/steak.jpg' />
+					{steak.length === 9 && <img src='/images/steak.jpg' />}
 					<ol>
 						{steak.map((e) => (
 							<li key={e}>
