@@ -47,10 +47,13 @@ function useMashedPotatoes() {
                         addItem(step5);
 
                         getInstruction(
-                            (step6)=> {
-							addItem(step6),
-							setMashedPotatoes(["Mashed potatoes are ready!"])
-							},
+                          "mashedPotatoes",
+                          5,
+                          (step6) => {
+                            addItem(step6),
+                            "Mashed potatoes are ready!"
+                              console.log(step6);
+                          },
                           (error) => console.log(error)
                         );
                       },
